@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="card card-logo card--dark-blue bdr-radius-t-r d-flex flex-direc--column">
+        <div class="logo__wrapper">
+          <img src="images/logo.svg" alt="logo-img" class="logo">
+        </div>
+        <div class="card__actions">
+          <div class="icon">
+            <img src="images/icon-document.svg" alt="icon-document"></img>
+          </div>
+          <div class="icon">
+            <img src="images/icon-folder.svg" alt="icon-folder"></img>
+          </div>
+          <div class="icon">
+            <img src="images/icon-upload.svg" alt="icon-upload"></img>
+          </div>
+        </div>
+      </div>
+      <div class="card card-range card--dark-blue">
+        <p>You’ve used <span class="font--bold" id="valueUsed"></span> of your storage</p>
+        <div class="input-range__wrapper">
+          <input type="range" name="range" id="slider" min="0" max="1000" value="815">
+          <div class="input-range--min">0 GB</div>
+          <div class="input-range--max">1000 GB</div>
+        </div>
+        <div class="input-range__value-wrapper">
+          <div class="input-range__value-text text-center"><span class="input-range__value-title" id="valueLeft"></span>GB LEFT
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <picture>
+    <source media="(min-width:900px)" srcset="images/bg-desktop.png" class="bg-img__desktop">
+    <img src="images/bg-mobile.png" alt="bg-mobile" class="bg-img">
+  </picture>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Michelle Anne B. Sayson</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
