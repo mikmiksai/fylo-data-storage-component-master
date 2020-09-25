@@ -21,7 +21,7 @@ body {
   color: var(--pale-blue);
 }
 
-section {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
